@@ -1,1 +1,53 @@
-vacio :P
+@import url('variables.css');
+@import url("taskbar.css");
+
+html, body {
+    font-family: 'MiFuente', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: var(--color-fondo);
+    padding-top: 30px;
+}
+.casa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.caja-img-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+.img-titulo {
+    max-width: 75%;
+    max-height: 75%;
+}
+.caja-luna {
+    display: flex;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 0 50px;
+    gap: 50px;
+  }
+  
+.img-luna {
+    width: 250px;
+    height: auto;
+}
+.caja-texto {
+    max-width: 500px;
+    width: 100%;
+}
+.caja-texto p {
+    margin-bottom: 10px; /* Espacio entre párrafos */
+}
+.texto {
+    color: #a578e3;
+    font-size: 16;
+    line-height: 1.5;
+}

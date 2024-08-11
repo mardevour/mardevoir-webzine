@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="es">
   <head>
+    <link rel="icon" href="assets/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Mardevoir</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+    <div class="taskbar">
+      <!-- taskbar izquierda -->
+      <div class="taskbar-left">
+          <button class="taskbar-buttons" onclick="toggleMenu('menu-mardevoir', this)">
+              <i class="fa fa-heart" aria-hidden="true"></i> Mardevoir
+          </button>
+          <button class="taskbar-buttons" onclick="toggleMenu('menu-notas', this)">
+              <i aria-hidden="true"></i> 🗒️ Notas
+          </button>
+      </div>
+      <!-- taskbar derecha -->
+      <div class="taskbar-right">
+          <button class="taskbar-buttons" onclick="toggleMenu('menu-music', this)">
+              <i class="fa fa-music" aria-hidden="true"></i>
+              Playlist-0d93w02...
+              <i class="fa fa-step-backward" aria-hidden="true"></i>
+              <i class="fa fa-pause" aria-hidden="true"></i>
+              <i class="fa fa-step-forward" aria-hidden="true"></i>
+          </button>
+          <button class="taskbar-buttons" onclick="toggleMenu('menu-reloj', this)">
+              <i class="fa fa-clock-o" aria-hidden="true"></i> Reloj
+          </button>
+          <button class="taskbar-buttons" onclick="toggleMenu('menu-wifi', this)">
+              <i class="fa fa-wifi" aria-hidden="true"></i>
+          </button>
+          <button class="taskbar-buttons" onclick="toggleMenu('menu-power', this)">
+              <i class="fa fa-power-off" aria-hidden="true"></i>
+          </button>
+      </div>
+    </div>
+
+  <div id="taskbar-menus"></div>
+  
+  <div class="casa">
+      <div class="caja-img-titulo">
+        <img class="img-titulo" src="assets/mardevoir-titulo.png" alt="Mardevoir Titulo">
+      </div>
+      <div class="caja-luna">
+        <img class="img-luna" src="assets/bajo_la_luna_purple.png" alt="Bajo La Luna">
+        <div class="caja-texto">
+          <p class="texto">
+            Reloj cactus libro, silla ventana faro. Nube guitarra ventana, pájaro mesa sombrero. Flor taza sofá, lámpara bicicleta cielo, caja piano sol. Cuadro pared alfombra, ventana árbol plato, agua tambor. Camisa ventana silla, libro lámpara perro, sol flor escritorio.
+          </p>
+          <p class="texto">
+            Cámara lámpara ventana, cuadro ratón tambor. Cinta reloj silla, libro flor pájaro, estrella sol taza. Bicicleta mesa árbol, ventana libro alfombra, sol taza coche. Sombrero ventana faro, guitarra caja mesa, flor reloj radio. Nube piano tambor, libro ventana silla, luz árbol ventana.
+          </p>
+        </div>
+      </div>
+      <div class="caja-luna">
+        <p class="texto">
+          Plato guitarra ventana, sol silla alfombra. Caja pájaro mesa, reloj libro flor, sombrero ventana tambor. Nube estrella piano, bicicleta faro sol, caja silla flor. Radio ventana reloj, tambor mesa libro, planta flor luz. Sofá ventana silla, sol caja guitarra, nubes libro flor.
+        </p>
+        </div>
+    
+  </div>
+
+  <script src="menus.js"></script>
+  <script>
+      function toggleMenu(menuId, button) {
+          const menus = document.querySelectorAll('.taskbar-menu');
+          menus.forEach(menu => {
+              if (menu.id === menuId) {
+                  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+                  const rect = button.getBoundingClientRect();
+                  menu.style.top = `${rect.bottom}px`;
+                  menu.style.left = `${rect.left}px`;
+              } else {
+                  menu.style.display = 'none';
+              }
+          });
+      }
+  </script>
+
+</body>
 </html>

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('assets/fonts/static/TMT-Paint-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color-fondo: #32293d;
+    --foreground-dark: #402773;
+    --lila: #a578e3;
+    --lila2: #663aa8;
+}
