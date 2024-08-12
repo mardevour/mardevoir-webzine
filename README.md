@@ -1,8 +1,6 @@
 # mardevoir-webzine
-Repo del webzine &lt;3
-
 ![mardevoir](main/assets/mardevoir-titulo.png)
 
-### Zine
+Repo del webzine &lt;3
 
 Escribir descripcion
