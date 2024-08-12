@@ -1,6 +1,6 @@
-# [WIP] mardevoir-webzine
+# [WIP] webzine
 ![mardevoir](main/assets/mardevoir-titulo.png)
 
 Repo del webzine &lt;3
 
-Escribir descripcion
+Descripcion (por hacer)
