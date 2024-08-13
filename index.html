@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="main/style.css">
+    <link rel="stylesheet" href="main/variables.css">
+    <link rel="stylesheet" href="main/interfaz/wm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;" url="main\desktop.html">
-    <title>Redirigiendo...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zine</title>
+    <style>
+    </style>
 </head>
 <body>
-    <p>Redirigiendo a la página principal...</p>
+    <div class="taskbar">
+        <!-- taskbar izquierda -->
+        <div class="taskbar-left">
+            <div class="taskbar-buttons"onclick="cargarPagina('main/portada.html')"> 
+                <i class="fa fa-heart" aria-hidden="true"></i>Mardevoir
+            </div>
+            <div class="taskbar-buttons" onclick="cargarPagina('main/apps/notas.html')">
+                <i class="fa fa-book" aria-hidden="true"></i>Notas
+            </div>
+            <div class="taskbar-buttons" onclick="cargarPagina('main/apps/galeria.html')">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>Galería
+            </div>
+        </div>
+        <i>...WIP...</i>
+        <!-- taskbar derecha -->
+        <div class="taskbar-right">
+            <button class="taskbar-buttons" onclick="toggleMenu('menu-music', this)">
+                <i class="fa fa-music" aria-hidden="true"></i>
+                Playlist
+                <i class="fa fa-step-backward" aria-hidden="true"></i>
+                <i class="fa fa-pause" aria-hidden="true"></i>
+                <i class="fa fa-step-forward" aria-hidden="true"></i>
+            </button>
+        </div>
+      </div>
+    <!-- Iframe donde se cargan las páginas -->
+    <div class="window" id="myWindow" style="width: 80%; height: 400px; top: 50px; left: 50px;">
+        <div class="window-header" id="windowHeader">⚛️ Portada</div>
+        <iframe class="window-content" id="iframeVentana" src="/main/portada.html" title="Ventana"></iframe>
+        <div class="resizer"></div>
+    </div>
+
+    <script src="main/interfaz/wm.js"></script>
 </body>
 </html>
