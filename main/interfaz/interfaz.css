@@ -1,7 +1,7 @@
-@import url('variables.css');
+@import url('/main/variables.css');
 
 .taskbar {
-    background-color: var(--lila);
+    background-color: var(--lila2);
     width: 100vw;
     height: 35px;
     display: flex;
@@ -27,9 +27,9 @@
 .taskbar-buttons {
     font-family: 'MiFuente', sans-serif;
     font-size: 15px;
-    background-color: var(--lila);
-    color: var(--foreground-dark);
-    border: 2px solid var(--lila2);
+    background-color: var(--color-fondo);
+    color: var(--lila);
+    border: 2px solid var(--lila);
     padding: 8px 10px;
     cursor: pointer;
     display: flex;
@@ -41,9 +41,9 @@
     z-index: 1000;
 }
 .taskbar-buttons:hover {
-    background-color: #7d4fbd;
-    color: #402773;
-    border: 2px solid #583291;
+    background-color: var(--color-fondo-hover);
+    color: var(--lila-1);
+    border: 2px solid var(--lila-1);
 }
 .playback-menu {
     display: flex;
