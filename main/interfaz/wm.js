@@ -59,7 +59,7 @@ function resizeWindow(e) {
 // Función para cambiar la página del iframe
 function cargarPagina(pagina) {
     var iframe = document.getElementById('iframeVentana');
-    var header = document.getElementById('windowHeader');
+    var header = document.getElementById('window-header-title');
 
     // Cambiar la URL del iframe
     iframe.src = pagina;
