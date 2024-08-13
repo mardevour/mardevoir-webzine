@@ -1,7 +1,7 @@
 @import url('/main/variables.css');
 
 .taskbar {
-    background-color: var(--lila2);
+    background-color: var(--lila-1);
     width: 100vw;
     height: 35px;
     display: flex;
@@ -25,11 +25,14 @@
     margin-left: 0;
 }
 .taskbar-buttons {
-    font-family: 'MiFuente', sans-serif;
+    font-family: 'uwuntu', sans-serif;
     font-size: 15px;
     background-color: var(--color-fondo);
     color: var(--lila);
-    border: 2px solid var(--lila);
+    border-top: 2px solid var(--lila);
+    border-left: 2px solid var(--lila);
+    border-bottom: 2px solid var(--lila2);
+    border-right: 2px solid var(--lila2);
     padding: 8px 10px;
     cursor: pointer;
     display: flex;
@@ -63,7 +66,7 @@
     display: none;
     position: absolute;
     top: 35px;
-    font-family: 'MiFuente', sans-serif;
+    font-family: 'uwuntu', sans-serif;
     font-size: 15px;
     background-color: var(--lila);
     color: var(--foreground-dark);
@@ -83,7 +86,7 @@
     padding: 5px;
 }
 .menus {
-    font-family: 'MiFuente', sans-serif;
+    font-family: 'uwuntu', sans-serif;
     font-size: 15px;
     background-color: var(--lila);
     color: var(--foreground-dark);
@@ -101,4 +104,24 @@
     background-color: #7d4fbd;
     color: #402773;
     border: 2px solid #583291;
+}
+.interior-ventana {
+    background-color: var(--lila);
+}
+.info-texto {
+    font-family: 'uwuntu', sans-serif;
+    font-size: 16px;
+    color: var(--color-fondo2);
+    text-align: justify;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.info-texto-titulo {
+    font-family: 'punk', sans-serif;
+    color: var(--color-fondo2);
+    font-size: 50px;
+    text-align: center;
+    padding-left: 5%;
 }

@@ -2,7 +2,6 @@
 @import url("interfaz/interfaz.css");
 
 html, body {
-    font-family: 'MiFuente', sans-serif;
     font-size: 16px;
     height: 100%;
     width: 100%;
@@ -10,13 +9,11 @@ html, body {
     background-color: var(--color-fondo);
     padding-top: 30px;
 }
-.casa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
+.desk-background {
+    height: calc(100% - 100px);
+    overflow: hidden;
 }
+
 .caja-img-titulo {
     display: flex;
     justify-content: center;
@@ -44,9 +41,10 @@ html, body {
     width: 100%;
 }
 .caja-texto p {
-    margin-bottom: 10px; /* Espacio entre párrafos */
+    margin-bottom: 10px;
 }
 .texto {
+    font-family: 'uwuntu', sans-serif;
     color: var(--lila);
     font-size: 16;
     line-height: 1.5;

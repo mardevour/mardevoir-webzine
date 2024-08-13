@@ -11,7 +11,7 @@
     <style>
     </style>
 </head>
-<body>
+<body class="desk-background">
     <div class="taskbar">
         <!-- taskbar izquierda -->
         <div class="taskbar-left">
@@ -41,8 +41,13 @@
         </div>
       </div>
     <!-- Iframe donde se cargan las páginas -->
-    <div class="window" id="myWindow" style="width: 80%; height: 400px; top: 50px; left: 50px;">
-        <div class="window-header" id="windowHeader">🥰 Hola!</div>
+    <div class="window" id="myWindow">
+        <div class="window-header" id="windowHeader">
+            🥰 Hola!
+            <div class="window-decorations">
+                <button class="decoration-button">🗕</button><button class="decoration-button">🗗</button><button class="decoration-button">🗙</button>
+            </div>
+        </div>
         <iframe class="window-content" id="iframeVentana" src="info.html" title="Ventana"></iframe>
         <div class="resizer"></div>
     </div>
