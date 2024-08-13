@@ -3,5 +3,5 @@
 <!---
 ![mardevoir](main/assets/mardevoir-titulo.png)
 -->
-
-Repo del webzine &lt;3
+[webzine](https://mardevour.github.io/mardevoir-webzine/)
+Repo del [webzine](https://mardevour.github.io/mardevoir-webzine/) &lt;3
