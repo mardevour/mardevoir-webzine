@@ -6,9 +6,11 @@
 }
 
 :root {
-    --color-fondo: #32293d;
+    --color-fondo: #333;
+    --color-fondo-hover: #444;
     --foreground-dark: #402773;
     --cover-border: #424242;
+    --lila-1: #c29cf7;
     --lila: #a578e3;
     --lila2: #663aa8;
 }
