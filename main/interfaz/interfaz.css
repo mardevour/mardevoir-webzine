@@ -1,5 +1,3 @@
-@import url('/main/variables.css');
-
 .taskbar {
     background-color: var(--lila-1);
     width: 100vw;
