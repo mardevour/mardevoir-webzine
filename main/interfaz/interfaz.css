@@ -1,5 +1,5 @@
 .taskbar {
-    background-color: var(--lila-1);
+    background-color: var(--acento-1);
     width: 100vw;
     height: 35px;
     display: flex;
@@ -26,11 +26,11 @@
     font-family: 'uwuntu', sans-serif;
     font-size: 15px;
     background-color: var(--color-fondo);
-    color: var(--lila);
-    border-top: 2px solid var(--lila);
-    border-left: 2px solid var(--lila);
-    border-bottom: 2px solid var(--lila2);
-    border-right: 2px solid var(--lila2);
+    color: var(--acento);
+    border-top: 2px solid var(--acento);
+    border-left: 2px solid var(--acento);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
     padding: 8px 10px;
     cursor: pointer;
     display: flex;
@@ -43,11 +43,11 @@
 }
 .taskbar-buttons:hover {
     background-color: var(--color-fondo-hover);
-    color: var(--lila-1);
-    border: 2px solid var(--lila-1);
+    color: var(--acento-1);
+    border: 2px solid var(--acento-1);
 }
 .interior-ventana {
-    background-color: var(--lila);
+    background-color: var(--acento);
 }
 .info-texto {
     font-family: 'uwuntu', sans-serif;
@@ -66,7 +66,7 @@
     text-align: center;
     padding-left: 5%;
     padding-bottom: 20px;
-    border-bottom: 1px solid var(--lila2);
+    border-bottom: 1px solid var(--acento2);
 }
 .info-texto-subtitulo {
     font-family: 'uwuntu', sans-serif;

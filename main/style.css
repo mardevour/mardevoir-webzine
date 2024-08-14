@@ -6,7 +6,3 @@ html, body {
     background-color: var(--color-fondo);
     padding-top: 30px;
 }
-.desk-background {
-    height: calc(100% - 100px);
-    overflow: hidden;
-}
