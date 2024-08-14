@@ -46,63 +46,6 @@
     color: var(--lila-1);
     border: 2px solid var(--lila-1);
 }
-.playback-menu {
-    display: flex;
-    padding: 0 0px;
-    box-sizing: border-box;
-    justify-content: space-between;
-    z-index: 1000;
-}
-.playback-menu > div {
-    align-items: stretch;
-    margin: 7px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 40px;
-  }
-.taskbar-menu {
-    display: none;
-    position: absolute;
-    top: 35px;
-    font-family: 'uwuntu', sans-serif;
-    font-size: 15px;
-    background-color: var(--lila);
-    color: var(--foreground-dark);
-    border: 2px solid var(--lila2);
-    z-index: 1000;
-    min-width: 200px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-.song-cover {
-    background-color: #7d4fbd;
-    max-width: 100%;
-    width: 243px;
-    height: auto;
-    border: 1px solid var(--cover-border);
-    border-radius: 4px;
-    padding: 5px;
-}
-.menus {
-    font-family: 'uwuntu', sans-serif;
-    font-size: 15px;
-    background-color: var(--lila);
-    color: var(--foreground-dark);
-    border: 2px solid var(--lila2);
-    padding: 8px 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    line-height: 1;
-    gap: 10px;
-    box-sizing: border-box;
-    width: 100%;
-}
-.menus:hover {
-    background-color: #7d4fbd;
-    color: #402773;
-    border: 2px solid #583291;
-}
 .interior-ventana {
     background-color: var(--lila);
 }
