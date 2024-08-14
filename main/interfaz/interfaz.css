@@ -108,12 +108,12 @@
 }
 .info-texto {
     font-family: 'uwuntu', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: var(--color-fondo2);
     text-align: justify;
     padding-top: 5px;
-    padding-bottom: 15px;
-    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-left: 70px;
     padding-right: 50px;
 }
 .info-texto-titulo {
@@ -122,4 +122,22 @@
     font-size: 50px;
     text-align: center;
     padding-left: 5%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--lila2);
+}
+.info-texto-subtitulo {
+    font-family: 'uwuntu', sans-serif;
+    font-size: 20px;
+    color: var(--color-fondo2);
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.simbolo-fa {
+    font-size: 21px;
+}
+.elementos-indice {
+    font-family: 'uwuntu', sans-serif;
 }

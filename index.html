@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" href="/main/assets/icons/favicon-32x32.png">
     <link rel="stylesheet" href="main/style.css">
     <link rel="stylesheet" href="main/variables.css">
     <link rel="stylesheet" href="main/interfaz/interfaz.css">
@@ -13,23 +14,24 @@
     </style>
 </head>
 <body class="desk-background">
+    <!-- taskbar -->
     <div class="taskbar">
-        <!-- taskbar izquierda -->
+        <!-- taskbar elementos izquierda -->
         <div class="taskbar-left">
-            <div class="taskbar-buttons"onclick="cargarPagina('main/portada.html')"> 
+            <div class="taskbar-buttons"onclick="cargarPagina('main/apps/portada.html')"> 
                 <i class="fa fa-heart" aria-hidden="true"></i>Mardevoir
             </div>
             <div class="taskbar-buttons" onclick="cargarPagina('main/apps/notas.html')">
-                <i class="fa fa-book" aria-hidden="true"></i>Notas
+                <i class="fa fa-book" aria-hidden="true"></i>Notas ~ índice
             </div>
             <div class="taskbar-buttons" onclick="cargarPagina('main/apps/galeria.html')">
                 <i class="fa fa-picture-o" aria-hidden="true"></i>Galería
             </div>
         </div>
         <i>...WIP...</i>
-        <!-- taskbar derecha -->
+        <!-- taskbar elementos derecha -->
         <div class="taskbar-right">
-            <div class="taskbar-buttons" onclick="cargarPagina('info.html')">
+            <div class="taskbar-buttons" onclick="cargarPagina('main/apps/info.html')">
                 <i class="fa fa-info-circle" aria-hidden="true"></i>
             </div>
             <button class="taskbar-buttons" onclick="cargarPagina('main/apps/player.html')">
@@ -41,18 +43,24 @@
             </button>
         </div>
       </div>
-    <!-- Iframe donde se cargan las páginas -->
+    <!-- ventana -->
     <div class="window" id="myWindow">
         <div class="window-header" id="windowHeader">
-            <span id="window-header-title"></span>
+            <span id="window-header-title">😋 hola!</span>
             <div class="window-decorations">
-                <button class="decoration-button">🗕</button><button class="decoration-button">🗗</button><button class="decoration-button">🗙</button>
+                <!-- <button class="decoration-button">🗕</button><button class="decoration-button">🗗</button><button class="decoration-button">🗙</button> -->
+                <button class="decoration-button"><i class="fa fa-minus" aria-hidden="true"></i>
+                </button><button class="decoration-button"><i class="fa fa-window-maximize" aria-hidden="true"></i>
+                </button><button class="decoration-button"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
-        <iframe class="window-content" id="iframeVentana" src="info.html" title="Ventana"></iframe>
+        <iframe class="window-content" id="iframeVentana" src="main/apps/info.html" title="Ventana"></iframe>
+        <span class="pie-ventana" id="motd"></span>
         <div class="resizer"></div>
     </div>
 
+    <script src="main/interfaz/frase.js"></script>
     <script src="main/interfaz/wm.js"></script>
 </body>
 </html>

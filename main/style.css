@@ -15,20 +15,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-  }
-  
-.img-titulo {
-    max-width: 75%;
-    max-height: 75%;
 }
-.caja-luna {
-    display: flex;
-    align-items: flex-start;
-    height: 100vh;
-    padding: 0 50px;
-    gap: 50px;
-  }
-  
 .img-luna {
     width: 250px;
     height: auto;
@@ -38,19 +25,12 @@ html, body {
     width: 100%;
 }
 .caja-texto p {
+
     margin-bottom: 10px;
 }
 .texto {
     font-family: 'uwuntu', sans-serif;
-    color: var(--lila);
+    color: var(--color-fondo2);
     font-size: 16;
     line-height: 1.5;
-}
-.link {
-    text-decoration: none;
-    color: var(--lila);
-    font-size: 18px;
-}
-.link:hover {
-    text-decoration: underline;
 }

@@ -20,11 +20,12 @@ iframe {
     box-sizing: border-box;
     bottom: 17px;
     top: 52px;
-    left: 17px;
-    right: 17px;
+    left: 23px;
+    right: 23px;
 }
 
 .window-header {
+    font-family: 'uwuntu', sans-serif;
     display: flex;
     background: var(--color-fondo);
     color: var(--lila);
@@ -35,8 +36,15 @@ iframe {
     justify-content: space-between;
 }
 
-.window-decorations {
+.pie-ventana {
+    font-family: 'uwuntu', sans-serif;
+    font-size: 15px;
+    color: var(--lila);
 }
+
+/* .window-decorations {
+    
+} */
 
 .decoration-button {
     background-color: var(--color-fondo);
@@ -58,8 +66,9 @@ iframe {
 }
 
 .window-content {
-    height: calc(100% - 40px);
+    height: calc(100% - 48px);
     background-color: var(--lila);
+    border-bottom: 2px solid var(--lila2);
 }
 
 .resizer {

@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="/main/style.css">
+    <!-- importar estilos -->
+    <link rel="stylesheet" href="/main/interfaz/interfaz.css">
     <link rel="stylesheet" href="/main/variables.css">
+    <link rel="stylesheet" href="/main/interfaz/wm.css">
+    <!-- importar iconos de https://fontawesome.com/v4/icons/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📝 Notas</title>
-    <style>
-        .container {
-            width: 100%;
-            margin: 0 auto;
-            padding: 0 50px;
-            background-color: var(--color-fondo);
-        }
-        h1 {
-            text-align: center;
-            color: var(--color-fondo);
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-    
-    </style>
+    <!-- título -->
+    <title>🧐 Info</title>
 </head>
-<body>
-    <div class="container">
-        <h1 class="texto" >Índice de Contenidos</h1>
-        <ul>
-            <li><a class="link" href="/info.html">🧐 Info</a></li>
-            <li><a class="link" href="/main/portada.html">📕 Portada</a></li>
-            <li><a class="link" href="/main/apps/galeria.html">🌆 Galería</a></li>
-            <li><a class="link" href="pagina3.html">Página 3</a></li>
-            <li><a class="link" href="pagina4.html">Página 4</a></li>
-            <li><a class="link" href="pagina5.html">Página 5</a></li>
-        </ul>
-    </div>
+<body class="interior-ventana">
+    <center>
+        <p class="info-texto-titulo">ÍndíCE</p>
+        <p class="elementos-indice">
+            <i class="fa fa fa-arrow-circle-right" aria-hidden="true"></i>
+            🧐 <a class="link" href="/main/apps/info.html">Info</a> <span class="simbolo-fa">➫</span> info sobre la web
+        </p>
+        <p class="elementos-indice">
+            <i class="fa fa fa-arrow-circle-right" aria-hidden="true"></i>
+            📕 <a class="link" href="/main/portada.html">Portada</a> <span class="simbolo-fa">➫</span> Portada de la web
+        </p>
+        <p class="elementos-indice">
+            <i class="fa fa fa-arrow-circle-right" aria-hidden="true"></i>
+            🌆 <a class="link" href="/main/apps/galeria.html">Galería (pronto)</a> <span class="simbolo-fa">➫</span> galería (duh)
+        </p>
+        <p class="elementos-indice">
+            <i class="fa fa fa-arrow-circle-right" aria-hidden="true"></i>
+            🎶 <a class="link" href="/main/apps/galeria.html">Playlist (pronto)</a> <span class="simbolo-fa">➫</span> seleccion de temitas 👌
+        </p>
+    </center> 
 </body>
 </html>
