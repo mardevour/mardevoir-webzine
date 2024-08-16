@@ -7,6 +7,7 @@ let isResizing = false;
 let isDragging = false;
 let isMinimized = false;
 let isMaximized = false;
+let previousBoxShadow = '';
 let previousState = {};
 let lastX, lastY;
 
@@ -122,28 +123,32 @@ function maximizarVentana() {
     const taskbarHeight = document.querySelector('.taskbar').offsetHeight;
     
     if (!isMaximized) {
-        // Guardar el estado previo de la ventana
+        // guardar estado previo de ventana
         previousState = {
             width: rect.width,
             height: rect.height,
             left: rect.left,
             top: rect.top,
-            marginTop: windowElement.style.marginTop
+            marginTop: windowElement.style.marginTop,
+            boxShadow: windowElement.style.boxShadow
         };
 
-        // Maximizar la ventana
+        // maximizar ventana
         windowElement.style.width = window.innerWidth + 'px';
         windowElement.style.height = (window.innerHeight - taskbarHeight) + 'px';
         windowElement.style.left = '0px';
         windowElement.style.top = '0px';
+        windowElement.style.box
+        windowElement.style.boxShadow = 'none';
         
         isMaximized = true;
     } else {
-        // Restaurar el estado previo de la ventana
+        // restaurar estado previo de ventana
         windowElement.style.width = previousState.width + 'px';
         windowElement.style.height = previousState.height + 'px';
         windowElement.style.left = previousState.left + 'px';
         windowElement.style.top = previousState.top + 'px';
+        windowElement.style.boxShadow = previousState.boxShadow;
         
         isMaximized = false;
     }
