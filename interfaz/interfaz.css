@@ -162,9 +162,14 @@
     border-bottom: 2px solid var(--acento2);
     border-right: 2px solid var(--acento2);
 }
+.pb-song {
+    min-width: 250px;
+    margin: 14px;
+    font-family: 'uwuntu', sans-serif;
+    color: var(--acento);
+}
 .pb-controls {
     display: flex;
-    align-items: center;
 }
 .pb-controls i {
     font-size: 30px;
@@ -174,8 +179,8 @@
     border-bottom: 2px solid var(--acento2);
     border-right: 2px solid var(--acento2);
     margin-left: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 21px;
+    padding-right: 21px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -186,4 +191,17 @@
     border-left: 2px solid var(--acento-1);
     border-bottom: 2px solid var(--acento-1);
     border-right: 2px solid var(--acento-1);
+}
+.texto-contenido {
+    padding: 7px;
+    font-family: 'uwuntu', sans-serif;
+    background-color: var(--acento);
+    color: var(--color-fondo2);
+    border-top: 2px solid var(--acento2);
+    border-left: 2px solid var(--acento2);
+    border-bottom: 2px solid var(--acento-1);
+    border-right: 2px solid var(--acento-1);
+    overflow: auto;
+    margin: 5px;
+    width: 100%;
 }
