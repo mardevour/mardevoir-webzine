@@ -29,9 +29,10 @@ function actualizarReproductor() {
     cargarTexto(textos[indiceActual]).then(texto => {
         document.querySelector('.texto-contenido').innerHTML = texto;
     });
+    console.log(indiceActual);
 }
 
-function playSong(song, artist, portada, letra) {
+function playSong(song, artist, portada, letra, indice) {
     event.stopPropagation();
     document.getElementById('song-title').innerHTML = `<span class="simbolo-fa">➫</span> ${song}`;
     document.getElementById('artist-name').innerHTML = `<span class="simbolo-fa">➫</span> ${artist}`;
@@ -40,18 +41,19 @@ function playSong(song, artist, portada, letra) {
     cargarTexto(letra).then(texto => {
         document.querySelector('.texto-contenido').innerHTML = texto;
     });
-    indiceActual = index;
+    indiceActual = indice;
+    console.log(indiceActual);
 }
 function nextSong() {
     indiceActual = (indiceActual + 1) % canciones.length;
     actualizarReproductor();
-
+    console.log(indiceActual);
 }
 
 function prevSong() {
     indiceActual = ajustarIndice(indiceActual - 1, canciones.length);
     actualizarReproductor();
-
+    console.log(indiceActual);
 }
 
 function cargarTexto(url) {
@@ -66,13 +68,16 @@ function cargarTexto(url) {
             return texto.replace(/\n/g, '<br>');
         })
         .catch(error => console.error('Error al cargar el archivo:', error));
+    
+    console.log(indiceActual);
 }
 
 function abrirLink() {
     var url = links[indiceActual];
-    window.open(url, '_blank'); // Abre el enlace en una nueva pestaña
+    window.open(url, '_blank');
 }
 
 function ajustarIndice(indice, longitud) {
     return (indice + longitud) % longitud;
+    console.log(indiceActual);
 }
