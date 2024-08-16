@@ -1,6 +1,6 @@
 var imagenes = [
-    "/assets/songs/01.png",
-    "/assets/songs/02.png"
+    "../assets/songs/01.png",
+    "../assets/songs/02.png"
 ];
 var links = [
     "https://www.youtube.com/watch?v=8-yzng_td24')",
@@ -15,8 +15,8 @@ var canciones = [
     "Kor4"
 ];
 var textos = [
-    '/textos/agua.txt',
-    '/textos/kor4.txt'
+    '../textos/agua.txt',
+    '../textos/kor4.txt'
 ];
 
 var indiceActual = 0;
