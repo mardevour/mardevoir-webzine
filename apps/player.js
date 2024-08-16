@@ -1,22 +1,27 @@
 var imagenes = [
+    "../assets/songs/00.png",
     "../assets/songs/01.png",
     "../assets/songs/02.png"
 ];
 var links = [
     "https://www.youtube.com/watch?v=8-yzng_td24')",
-    "https://www.youtube.com/watch?v=A8IEuHqLotw')"
+    "https://www.youtube.com/watch?v=A8IEuHqLotw')",
+    "https://soundcloud.com/user987598186/jvzic8hqg2sq"
 ]
 var artistas= [
     "CANOA",
-    "katkat"
+    "katkat",
+    "hush"
 ];
 var canciones = [
     "Agua de bien",
-    "Kor4"
+    "Kor4",
+    "???"
 ];
 var textos = [
     '../textos/agua.txt',
-    '../textos/kor4.txt'
+    '../textos/kor4.txt',
+    '../textos/hush.txt'
 ];
 
 var indiceActual = 0;
