@@ -12,9 +12,36 @@
     <title>🎶 Música</title>
     <style></style>
 </head>
-<body class="interior-ventana">
-    <center>
-        <p class="info-texto">[PRONTO]</p>
-    </center>
+<body class="music-player">
+    <div class="mp-playlist">
+        <div class="mp-song" onclick="window.open('https://www.youtube.com/watch?v=8-yzng_td24')"> 
+            <img class="list-cover" src="/main/assets/songs/01.png" alt="agua de bien cover">
+            <i class="play-overlay" onclick="playSong(event, '/main/assets/songs/01.png')" aria-hidden="true">
+                <i class="fa fa-play"></i>
+            </i>
+            CANOA - Agua de bien
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+        </div>
+        <div class="mp-song" onclick="window.open('https://www.youtube.com/watch?v=A8IEuHqLotw')"> 
+            <img class="list-cover" src="/main/assets/songs/02.png" alt="agua de bien cover">
+            <i class="play-overlay" onclick="playSong(event, '/main/assets/songs/02.png')" aria-hidden="true">
+                <i class="fa fa-play"></i>
+            </i>
+            katkat - Kor4
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="mp-player">
+        <img class="np-cover" id="np-cover" src="/main/assets/songs/play-cover.png" alt="album cover">
+        <div class="pb-controls">
+            <i class="fa fa-step-backward" aria-hidden="true"></i>
+            <i class="fa fa-play" aria-hidden="true"></i>
+            <i class="fa fa-step-forward" onclick="nextSong()" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+
+        </div>
+    </div>
+    
+    <script src="player.js"></script>
 </body>
 </html>

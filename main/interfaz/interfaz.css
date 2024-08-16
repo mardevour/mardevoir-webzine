@@ -8,8 +8,7 @@
     box-sizing: border-box;
     justify-content: space-between;
     position: fixed;
-    top: 0;
-    z-index: 1000;
+    bottom: 0;
 }
 .taskbar-left, .taskbar-right {
     display: flex;
@@ -47,7 +46,11 @@
     border: 2px solid var(--acento-1);
 }
 .interior-ventana {
-    background-color: var(--acento);
+    min-height: 100%;
+    height: fit-content;
+    margin-top: -60px;
+    padding-bottom: 30px;
+    background-color: var(--acento);    
 }
 .info-texto {
     font-family: 'uwuntu', sans-serif;
@@ -56,15 +59,14 @@
     text-align: justify;
     padding-top: 5px;
     padding-bottom: 10px;
-    padding-left: 70px;
-    padding-right: 50px;
+    padding-left: 7%;
+    padding-right: 9%;
 }
 .info-texto-titulo {
     font-family: 'punk', sans-serif;
     color: var(--color-fondo2);
     font-size: 50px;
     text-align: center;
-    padding-left: 5%;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--acento2);
 }
@@ -75,7 +77,7 @@
     text-align: justify;
     padding-top: 10px;
     padding-bottom: 15px;
-    padding-left: 50px;
+    padding-left: 5%;
     padding-right: 50px;
 }
 .simbolo-fa {
@@ -83,4 +85,105 @@
 }
 .elementos-indice {
     font-family: 'uwuntu', sans-serif;
+}
+
+.music-player {
+    margin-top: -60px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--acento);
+    overflow: hidden;
+}
+.mp-playlist {
+    border: 2px solid var(--acento2);
+    flex: 1;
+    overflow-y: auto;
+}
+.mp-player {
+    display: flex;background-color: var(--color-fondo);
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
+    height: 150px;
+}
+.mp-song {
+    font-family: 'uwuntu', sans-serif;
+    font-size: 15px;
+    background-color: var(--acento);
+    color: var(--color-fondo);
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
+    padding: 8px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    gap: 10px;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1000;
+}
+.mp-song:hover {
+    background-color: var(--acento-1);
+    border: 2px solid var(--acento);
+    color: var(--color-fondo-hover);
+}
+.list-cover {
+    width: 60px;
+    display: block;
+    border-top: 2px solid var(--acento);
+    border-left: 2px solid var(--acento);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
+}
+.play-overlay {
+    position: fixed;
+    padding-left: 26px;
+    padding-right: 19px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    color: var(--color-fondo-hover);
+    font-size: 24px;
+    opacity: 0;
+    
+}
+.play-overlay:hover {
+    opacity: 1;
+}
+.np-cover {
+    margin: 7px;
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
+}
+.pb-controls {
+    display: flex;
+    align-items: center;
+}
+.pb-controls i {
+    font-size: 30px;
+    color: var(--acento);
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.pb-controls i:hover {
+    color: var(--acento);
+    background-color: var(--color-fondo-hover);
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento-1);
+    border-right: 2px solid var(--acento-1);
 }

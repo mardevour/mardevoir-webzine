@@ -13,20 +13,20 @@ iframe {
 .window {
     margin-top: 0px;
     position: fixed;
+    background-color: var(--acento);
     border-top: 2px solid var(--acento);
     border-right: 2px solid var(--acento2);
     border-left: 2px solid var(--acento);
     border-bottom: none;
-    background: var(--color-fondo);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     overflow: hidden;
-    min-width: 400px;
     min-height: 250px;
+    max-width: 100%;
     box-sizing: border-box;
-    bottom: 17px;
-    top: 52px;
-    left: 23px;
-    right: 23px;
+    bottom: 48px;
+    top: 14px;
+    left: 20px;
+    right: 20px;
 }
 
 .window-header {
@@ -46,7 +46,7 @@ iframe {
 .pie-ventana {
     font-family: 'uwuntu', sans-serif;
     font-size: 15px;
-    color: var(--acento);
+    color: var(--color-fondo);
 }
 
 /* .window-decorations {
@@ -79,8 +79,8 @@ iframe {
 .window-content {
     width: 100%;
     height: calc(100% - 48px);
-    background-color: var(--acento);
-    border-bottom: 2px solid var(--acento2);
+    border-top: 2px solid var(--acento2);
+    border-bottom: 2px solid var(--acento-1);
 }
 
 .resizer {

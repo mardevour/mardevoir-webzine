@@ -133,9 +133,9 @@ function maximizarVentana() {
 
         // Maximizar la ventana
         windowElement.style.width = window.innerWidth + 'px';
-        windowElement.style.height = (window.innerHeight - 34) + 'px';
+        windowElement.style.height = (window.innerHeight - taskbarHeight) + 'px';
         windowElement.style.left = '0px';
-        windowElement.style.top = taskbarHeight + 'px';
+        windowElement.style.top = '0px';
         
         isMaximized = true;
     } else {
