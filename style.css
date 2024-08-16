@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'uwuntu';
-    src: url('../../assets/fonts/variable/Ubuntu-M.ttf') format('truetype');
+    src: url('assets/fonts/variable/Ubuntu-M.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
