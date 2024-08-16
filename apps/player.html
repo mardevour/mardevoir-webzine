@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- importar estilos -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/interfaz/interfaz.css">
+    <link rel="stylesheet" href="/interfaz/wm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- título -->
+    <title>🎶 Música</title>
+    <style></style>
+</head>
+<body class="music-player">
+    <div class="mp-playlist">
+        <div class="mp-song" onclick="playSong('CANOA', 'Agua de bien', '/assets/songs/01.png', textos[0])"> 
+            <img class="list-cover" src="/assets/songs/01.png" alt="cover">
+            <i class="play-overlay" onclick="openLink(0)" aria-hidden="true">
+                <i class="fa fa-play"></i>
+            </i>
+            CANOA - Agua de bien
+        </div>
+        <div class="mp-song" onclick="playSong('katkat', 'Kor4', '/assets/songs/02.png', textos[1])"> 
+            <img class="list-cover" src="/assets/songs/02.png" alt="cover">
+            <i class="play-overlay" onclick="openLink(1)" aria-hidden="true">
+                <i class="fa fa-play"></i>
+            </i>
+            katkat - Kor4
+        </div>
+    </div>
+    <div class="mp-player">
+        <img class="np-cover" id="np-cover" src="/assets/songs/play-cover.png" alt="album cover">
+        <div style="display: flex; flex-direction: column;">
+            <div>
+                <p id="artist-name" class="pb-song" style="font-size: 25px;">
+                    <span class="simbolo-fa">➫</span>
+                </p>
+                <p id="song-title" class="pb-song">
+                    <span class="simbolo-fa">➫</span>
+                </p>
+            </div>
+            <div class="pb-controls">
+                <i class="fa fa-step-backward" onclick="prevSong()" aria-hidden="true"></i>
+                <i class="fa fa-play"  id="play-button" aria-hidden="true" onclick="abrirLink()"></i>
+                <i class="fa fa-step-forward" onclick="nextSong()" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="texto-contenido">
+            
+        </div>
+    </div>
+    
+    <script src="player.js"></script>
+</body>
+</html>
