@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'overpass';
-    src: url('../mardevoir-webzine/assets/fonts/variable/overpass/overpass-cyrillic-300-normal.ttf') format('truetype');
+    src: url('assets/fonts/variable/overpass/overpass-cyrillic-300-normal.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'uwuntu';
-    src: url('../mardevoir-webzine/assets/fonts/variable/Ubuntu-M.ttf') format('truetype');
+    src: url('../../assets/fonts/variable/Ubuntu-M.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'punk';
-    src: url('../mardevoir-webzine/assets/fonts/variable/Gothic-Punk.ttf') format('truetype');
+    src: url('assets/fonts/variable/Gothic-Punk.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
