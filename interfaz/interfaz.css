@@ -1,0 +1,187 @@
+@import url('/main/variables.css');
+
+.taskbar {
+    background-color: var(--lila2);
+    width: 100vw;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 0px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.taskbar-left, .taskbar-right {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.taskbar-left {
+    margin-right: 0;
+}
+.taskbar-right {
+    margin-left: 0;
+}
+.taskbar-buttons {
+    font-family: 'MiFuente', sans-serif;
+    font-size: 15px;
+    background-color: var(--color-fondo);
+    color: var(--lila);
+    border: 2px solid var(--lila);
+    padding: 8px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    gap: 10px;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1000;
+}
+.taskbar-buttons:hover {
+    background-color: var(--color-fondo-hover);
+    color: var(--lila-1);
+    border: 2px solid var(--lila-1);
+}
+.playback-menu {
+    display: flex;
+    padding: 0 0px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.playback-menu > div {
+    align-items: stretch;
+    margin: 7px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 40px;
+  }
+.taskbar-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    font-family: 'MiFuente', sans-serif;
+    font-size: 15px;
+    background-color: var(--lila);
+    color: var(--foreground-dark);
+    border: 2px solid var(--lila2);
+    z-index: 1000;
+    min-width: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.song-cover {
+    background-color: #7d4fbd;
+    max-width: 100%;
+    width: 243px;
+    height: auto;
+    border: 1px solid var(--cover-border);
+    border-radius: 4px;
+    padding: 5px;
+}
+.menus {
+    font-family: 'MiFuente', sans-serif;
+    font-size: 15px;
+    background-color: var(--lila);
+    color: var(--foreground-dark);
+    border: 2px solid var(--lila2);
+    padding: 8px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.menus:hover {
+    background-color: #7d4fbd;
+    color: #402773;
+    border: 2px solid #583291;
+}
+<<<<<<< Updated upstream:main/interfaz/interfaz.css
+.interior-ventana {
+    background-color: var(--lila);
+=======
+.list-cover {
+    width: 60px;
+    display: block;
+    border-top: 2px solid var(--acento);
+    border-left: 2px solid var(--acento);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
+}
+.play-overlay {
+    position: fixed;
+    padding-left: 26px;
+    padding-right: 19px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    color: var(--color-fondo-hover);
+    font-size: 24px;
+    opacity: 0;
+    
+}
+.play-overlay:hover {
+    opacity: 1;
+}
+.np-cover {
+    margin: 7px;
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
+}
+.pb-controls {
+    display: flex;
+    align-items: center;
+}
+.pb-controls i {
+    font-size: 25px;
+    color: var(--acento);
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
+    margin-top: -2px;
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.pb-controls i:hover {
+    color: var(--acento);
+    background-color: var(--color-fondo-hover);
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento-1);
+    border-right: 2px solid var(--acento-1);
+}
+.pb-song {
+    width: 250px;
+    /* border-right: 2px solid var(--acento); */
+    font-family: 'uwuntu', sans-serif;
+    font-size: 17px;
+    margin: 7%;
+    padding-bottom: 0px;
+    color: var(--acento)
+}
+.texto-contenido {
+    overflow: auto;
+    font-family: 'uwuntu', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+    color: var(--color-fondo2);
+    background-color: var(--acento);
+    width: 100%;
+    margin: 7px;
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento-1);
+    border-right: 2px solid var(--acento-1);
+>>>>>>> Stashed changes:interfaz/interfaz.css
+}

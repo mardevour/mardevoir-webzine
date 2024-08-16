@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<<<<<<< Updated upstream
+=======
+    <link rel="icon" href="main/assets/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="interfaz/interfaz.css">
+    <link rel="stylesheet" href="interfaz/wm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+>>>>>>> Stashed changes
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="0; url=main\desktop.html">
     <title>Redirigiendo...</title>
 </head>
+<<<<<<< Updated upstream
 <body>
     <p>Redirigiendo a la página principal...</p>
+=======
+<body class="desk-background">
+    <!-- taskbar -->
+    <div class="taskbar">
+        <!-- taskbar elementos izquierda -->
+        <div class="taskbar-left">
+            <div class="taskbar-buttons"onclick="cargarPagina('apps/portada.html')"> 
+                <i class="fa fa-heart" aria-hidden="true"></i>Mardevoir
+            </div>
+            <div class="taskbar-buttons" onclick="cargarPagina('apps/notas.html')">
+                <i class="fa fa-book" aria-hidden="true"></i>Notas ~ índice
+            </div>
+            <div class="taskbar-buttons" onclick="cargarPagina('apps/galeria.html')">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>Galería
+            </div>
+        </div>
+        <i>...WIP...</i>
+        <!-- taskbar elementos derecha -->
+        <div class="taskbar-right">
+            <div class="taskbar-buttons" onclick="cargarPagina('apps/info.html')">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </div>
+            <button class="taskbar-buttons" onclick="cargarPagina('apps/player.html')">
+                <i class="fa fa-music" aria-hidden="true"></i>
+                Playlist
+                <i class="fa fa-step-backward" aria-hidden="true"></i>
+                <i class="fa fa-pause" aria-hidden="true"></i>
+                <i class="fa fa-step-forward" aria-hidden="true"></i>
+            </button>
+        </div>
+      </div>
+    <!-- ventana -->
+    <div class="window" id="myWindow">
+        <div class="window-header" id="windowHeader">
+            <span id="window-header-title">😋 hola!</span>
+            <div class="window-decorations">
+                <!-- <button class="decoration-button">🗕</button><button class="decoration-button">🗗</button><button class="decoration-button">🗙</button> -->
+                <button class="decoration-button" onclick="minimizarVentana()"><i class="fa fa-minus" aria-hidden="true"></i>
+                </button><button class="decoration-button" onclick="maximizarVentana()"><i class="fa fa-window-maximize" aria-hidden="true"></i>
+                </button><button class="decoration-button" onclick="minimizarVentana()"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <iframe class="window-content" id="iframeVentana" src="apps/info.html" title="Ventana"></iframe>
+        <span class="pie-ventana" id="motd"></span>
+        <div class="resizer"></div>
+    </div>
+
+    <script src="interfaz/frase.js"></script>
+    <script src="interfaz/wm.js"></script>
+>>>>>>> Stashed changes
 </body>
 </html>
