@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'overpass';
-    src: url('assets/fonts/variable/overpass/overpass-cyrillic-300-normal.ttf') format('truetype');
+    src: url('assets/fonts/variable/overpass/overpass-latin-300-normal.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -39,8 +39,8 @@
     --color-fondo: #333;
     --color-fondo2: #111;
     --color-fondo-hover: #444;
-    --foreground-dark: #402773;
     --cover-border: #424242;
+    --foreground-dark: #402773;
     --acento-1: #c29cf7;
     --acento: #a578e3;
     --acento2: #663aa8;

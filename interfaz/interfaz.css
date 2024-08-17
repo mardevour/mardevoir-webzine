@@ -52,6 +52,14 @@
     padding-bottom: 30px;
     background-color: var(--acento);    
 }
+.imagen {
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);*/
+    
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
+}
 .info-texto {
     font-family: 'uwuntu', sans-serif;
     font-size: 15px;
@@ -84,6 +92,7 @@
     font-size: 21px;
 }
 .elementos-indice {
+    text-align: left;
     font-family: 'uwuntu', sans-serif;
 }
 

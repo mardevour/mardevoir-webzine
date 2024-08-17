@@ -1,27 +1,32 @@
 var imagenes = [
     "../assets/songs/00.png",
     "../assets/songs/01.png",
-    "../assets/songs/02.png"
+    "../assets/songs/02.png",
+    "../assets/songs/03.png"
 ];
 var links = [
     "https://www.youtube.com/watch?v=8-yzng_td24')",
     "https://www.youtube.com/watch?v=A8IEuHqLotw')",
-    "https://soundcloud.com/user987598186/jvzic8hqg2sq"
+    "https://soundcloud.com/user987598186/jvzic8hqg2sq",
+    "https://industriasmda.bandcamp.com/album/frigodemos"
 ]
 var artistas= [
     "CANOA",
     "katkat",
-    "hush"
+    "hush",
+    "Tetas Frías"
 ];
 var canciones = [
     "Agua de bien",
     "Kor4",
-    "???"
+    "???",
+    "Frigodemos"
 ];
 var textos = [
     '../textos/agua.txt',
     '../textos/kor4.txt',
-    '../textos/hush.txt'
+    '../textos/hush.txt',
+    '../textos/frigo.txt'
 ];
 
 var indiceActual = 0;
