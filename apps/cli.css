@@ -44,3 +44,6 @@ body {
     background-color: var(--color-fondo2);
     color: var(--acento);
 }
+.text:focus {
+    outline: none;
+}
