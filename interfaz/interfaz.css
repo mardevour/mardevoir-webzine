@@ -1,5 +1,7 @@
 .taskbar {
-    background-color: var(--acento-1);
+    background-color: var(--acento);
+    border-top: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento2);
     width: 100vw;
     height: 35px;
     display: flex;
@@ -26,8 +28,8 @@
     font-size: 15px;
     background-color: var(--color-fondo);
     color: var(--acento);
-    border-top: 2px solid var(--acento);
-    border-left: 2px solid var(--acento);
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
     border-bottom: 2px solid var(--acento2);
     border-right: 2px solid var(--acento2);
     padding: 8px 10px;

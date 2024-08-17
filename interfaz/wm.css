@@ -14,9 +14,9 @@ iframe {
     margin-top: 0px;
     position: fixed;
     background-color: var(--acento);
-    border-top: 2px solid var(--acento);
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
     border-right: 2px solid var(--acento2);
-    border-left: 2px solid var(--acento);
     border-bottom: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     overflow: hidden;
@@ -30,13 +30,13 @@ iframe {
 }
 
 .window-header {
-    height: 20px;
+    height: 22px;
     font-family: 'uwuntu', sans-serif;
     display: flex;
     background: var(--color-fondo);
+    border-bottom: 2px solid var(--acento2);
     color: var(--acento);
     padding-left: 3px;
-    margin-right: -2px;
     cursor: move;
     user-select: none;
     justify-content: space-between;
@@ -54,15 +54,15 @@ iframe {
 } */
 
 .decoration-button {
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     position: inherit;
     font-size: 11px;
     background-color: var(--color-fondo);
     color: var(--acento);
     border: none;
-    border-top: 2px solid var(--acento);
-    border-left: 2px solid var(--acento);
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
     border-bottom: 2px solid var(--acento2);
     border-right: 2px solid var(--acento2);
 }
@@ -73,14 +73,14 @@ iframe {
     border-left: 2px solid var(--acento-1);
     border-bottom: 2px solid var(--acento-1);
     border-right: 2px solid var(--acento-1);
-
 }
-
 .window-content {
     width: 100%;
     height: calc(100% - 48px);
-    border-top: 2px solid var(--acento2);
-    border-bottom: 2px solid var(--acento-1);
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
 }
 
 .resizer {
