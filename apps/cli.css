@@ -1,0 +1,46 @@
+body {
+    overflow: hidden;
+    font-family: 'uwuntuMono', sans-serif;
+}
+.console {
+    margin-top: -62px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'uwuntuMono', sans-serif;
+    color: var(--acento);
+    background-color: #444;
+}
+.output {
+    overflow-y: auto;
+    overflow-block: bottom;
+    white-space: pre;
+    padding: 8px;
+    background-color: var(--color-fondo2);
+    height: calc(100vh - 59px);
+    width: 100%;
+    font-family: 'uwuntuMono', sans-serif;
+    font-size: 20px;
+}
+.prompt {
+    color: var(--acento-1);
+    font-family: 'uwuntuMonoB', sans-serif;
+}
+.prompt-comando {
+    color: var(--acento);
+    font-family: 'uwuntuMono', sans-serif;
+}
+
+.text {
+    height: 20px;
+    bottom: 0;
+    font-family: 'uwuntuMono', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border-top: 2px solid var(--acento-1);
+    border-left: 2px solid var(--acento-1);
+    border-bottom: 2px solid var(--acento2);
+    border-right: 2px solid var(--acento2);
+    background-color: var(--color-fondo2);
+    color: var(--acento);
+}

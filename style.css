@@ -6,7 +6,25 @@
 }
 @font-face {
     font-family: 'uwuntu';
-    src: url('assets/fonts/variable/Ubuntu-M.ttf') format('truetype');
+    src: url('assets/fonts/variable/Ubuntu/Ubuntu-M.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'uwuntuMono';
+    src: url('assets/fonts/variable/Ubuntu/UbuntuMono-R.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'uwuntuMonoB';
+    src: url('assets/fonts/variable/Ubuntu/UbuntuMono-B.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'uwuntuMonoI';
+    src: url('assets/fonts/variable/Ubuntu/UbuntuMono-RI.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,6 +50,6 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: var(--color-fondo);
     padding-top: 30px;
+    background-color: var(--color-fondo);
 }
