@@ -1,0 +1,7 @@
+       .+-------+       ☢ System: MardevoirOS
+     .' |     .'|       ☣ WM: mardevoir WM
+    +---+---+'  |       ⚛ status: online
+    |   | M |   |       ☯ ip: 6.6.6
+    |  .+---+---+       ☸ shell: marshmallow
+    |.'     | .'
+    +-------+'          🟥🟧🟨🟩🟦🟪⬛⬜
