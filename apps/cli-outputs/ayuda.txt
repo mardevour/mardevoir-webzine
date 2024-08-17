@@ -1,15 +1,9 @@
-shell de mardevoir
-
-███╗   ███╗ █████╗ ██████╗ ██████╗ ███████╗██╗   ██╗ ██████╗ ██╗██████╗ 
-████╗ ████║██╔══██╗██╔══██╗██╔══██╗██╔════╝██║   ██║██╔═══██╗██║██╔══██╗
-██╔████╔██║███████║██████╔╝██║  ██║█████╗  ██║   ██║██║   ██║██║██████╔╝
-██║╚██╔╝██║██╔══██║██╔══██╗██║  ██║██╔══╝  ╚██╗ ██╔╝██║   ██║██║██╔══██╗
-██║ ╚═╝ ██║██║  ██║██║  ██║██████╔╝███████╗ ╚████╔╝ ╚██████╔╝██║██║  ██║
-╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝  ╚═══╝   ╚═════╝ ╚═╝╚═╝  ╚═╝
-
-comandos disponibles:
+> comandos disponibles:
     > ayuda - muestra esta salida
     > clear - limpia el historial de comandos
     > neofetch - tiene un output xulo
     > hora - hora actual
+    > miau
     > hellfire poncho - hellfire poncho
+    > flip / unflip
+    > numero aleatorio - da un numero aleatorio

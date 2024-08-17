@@ -14,14 +14,48 @@ document.getElementById('commandInput').addEventListener('keydown', function(eve
 
 // auto ejecutar comando al cargar cli
 document.addEventListener('DOMContentLoaded', function() {
-    const initialCommand = 'ayuda';
+    const initialCommand = 'hola';
     handleCommand(initialCommand, document.getElementById('output'));
 });
+
+function scrollOutputToBottom(outputDiv) {
+    outputDiv.scrollTop = outputDiv.scrollHeight;
+}
 
 function handleCommand(command, outputDiv) {
     const response = document.createElement('div');
     
     switch (command.toLowerCase()) {
+        case 'hola':
+            fetch('cli-outputs/hola.txt')
+                .then(response => response.text())
+                .then(data => {
+                    const fileContent = document.createElement('div');
+                    fileContent.textContent = data;
+                    outputDiv.appendChild(fileContent);
+                    scrollOutputToBottom(outputDiv);
+                })
+                .catch(error => {
+                    const errorMessage = document.createElement('div');
+                    errorMessage.textContent = 'Error al leer el archivo: ' + error;
+                    outputDiv.appendChild(errorMessage);
+                });
+            break;
+        case 'miau':
+            fetch('cli-outputs/miau.txt')
+                .then(response => response.text())
+                .then(data => {
+                    const fileContent = document.createElement('div');
+                    fileContent.textContent = data;
+                    outputDiv.appendChild(fileContent);
+                    scrollOutputToBottom(outputDiv);
+                })
+                .catch(error => {
+                    const errorMessage = document.createElement('div');
+                    errorMessage.textContent = 'Error al leer el archivo: ' + error;
+                    outputDiv.appendChild(errorMessage);
+                });
+            break;
         case 'ayuda':
             fetch('cli-outputs/ayuda.txt')
                 .then(response => response.text())
@@ -29,6 +63,7 @@ function handleCommand(command, outputDiv) {
                     const fileContent = document.createElement('div');
                     fileContent.textContent = data;
                     outputDiv.appendChild(fileContent);
+                    scrollOutputToBottom(outputDiv);
                 })
                 .catch(error => {
                     const errorMessage = document.createElement('div');
@@ -43,6 +78,7 @@ function handleCommand(command, outputDiv) {
                     const fileContent = document.createElement('div');
                     fileContent.textContent = data;
                     outputDiv.appendChild(fileContent);
+                    scrollOutputToBottom(outputDiv);
                 })
                 .catch(error => {
                     const errorMessage = document.createElement('div');
@@ -51,25 +87,34 @@ function handleCommand(command, outputDiv) {
                 });
             break;
         case 'hora':
-            response.textContent = `hora: ${new Date().toLocaleTimeString()}`;
+            response.textContent = `> hora: ${new Date().toLocaleTimeString()}`;
+            break;
+        case 'numero aleatorio':
+            response.textContent = `> numero: 42`;
+            break;
+        case 'flip':
+            response.textContent = `> (╯°□°）╯︵ ┻━┻`;
+            break;
+        case 'unflip':
+            response.textContent = `> ┬─┬ ノ( ゜-゜ノ)`;
             break;
         case 'rm -fr /':
-            response.textContent = `no quieres hacer eso...`;
+            response.textContent = `> no quieres hacer eso...`;
             break;
         case 'rm -fr / --no-preserve-root':
-            response.textContent = `no quieres hacer eso...`;
+            response.textContent = `> no quieres hacer eso...`;
             break;
         case 'hellfire poncho':
             const url = 'https://juegosasados.itch.io/hellfire-poncho';
             window.open(url, '_blank');
-            response.textContent = `abriendo en pestaña nueva: ${url}`;
+            response.textContent = `> abriendo en pestaña nueva: ${url}`;
             outputDiv.appendChild(response);
             break;
         case 'clear':
             outputDiv.innerHTML = '';
             return;        
         default:
-            response.textContent = `Comando no reconocido: ${command}`;
+            response.textContent = `> comando no reconocido: ${command}`;
             break;
     }
     
@@ -92,4 +137,5 @@ function handleCommand(command, outputDiv) {
 
     // desplazar hacia abajo
     outputDiv.scrollTop = outputDiv.scrollHeight;
+    scrollOutputToBottom(outputDiv);
 }
