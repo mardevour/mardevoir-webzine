@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- importar estilos -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../interfaz/interfaz.css">
+    <link rel="stylesheet" href="../interfaz/wm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- título -->
+    <title>🎬 Videos</title>
+    <style></style>
+</head>
+<body class="body-videos">
+	<div class="container-videos">
+		<div class="video-section">
+			<iframe class="video"
+                src="https://www.youtube.com/embed/oDFbaW6tG64?si=D8eXXr24_OyA-4pp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+			<div class="video-desc">
+                <div class="texto-contenido-video">
+                    <!-- descripcion del video -->
+                    <p>descripción del video...</p>
+                </div>
+            </div>
+		</div>
+		<div class="video-playlist">
+            <div class="mp-song" onclick="playSong('CANOA', 'Agua de bien', '../assets/songs/00.png', textos[0], 0)"> 
+                <img class="list-video" src="../assets/videos/flors.png" alt="cover">
+                <i class="play-overlay" aria-hidden="true">
+                    <i class="fa fa-play"></i>
+                </i>
+                DAMUNT DE TU NOMÉS SES FLORS
+            </div>
+        </div>
+	</div>
+
+    
+    <script src="player.js"></script>
+</body>
+</html>
